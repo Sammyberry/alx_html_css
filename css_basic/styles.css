@@ -12,10 +12,28 @@ main {
 article {
     flex: 2;
     overflow-y: auto;
+    background-color: #f5f5f5;
+    padding: 15px;
 
 }
 
 aside {
     flex: 1;
     overflow-y: auto;
+    background-color: #e9ecef;
+    padding: 15px;
+    
+}
+
+footer {
+  background-color: #333;
+  color: #eee;
+  text-align: center;
+  padding: 10px;
+}
+
+
+article p {
+  font-size: 1.1em;
+  line-height: 1.6;
 }
