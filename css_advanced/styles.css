@@ -1,0 +1,524 @@
+/* ========== GLOBAL STYLES ========== */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #333;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ========== HEADER ========== */
+.header-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 0;
+  z-index: 10;
+}
+
+.header-1 nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-1 img {
+  height: 40px;
+}
+
+.header-1 ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.header-1 a {
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+.header-1 a:hover {
+  color: #ddd;
+}
+
+/* ========== HERO BLOCK (Hero + Pros Combined) ========== */
+.hero-block {
+  background: url('images/Object.png') center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  padding: 120px 20px 100px; /* Enough space for hero + pros */
+}
+
+.hero-block::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* overlay for readability */
+  z-index: 1;
+}
+
+.hero-block .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* HERO CONTENT */
+.hero-content h1 {
+  font-family: 'Spin Cycle OT', 'Source Sans Pro', sans-serif;
+  font-size: 4.5rem;
+  font-weight: 700;
+  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.hero-content .hero-tags {
+  margin-bottom: 35px;
+}
+
+.hero-content .hero-tags span {
+  margin: 0 10px;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #ddd;
+  letter-spacing: 2px;
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, #d642f2, #9f55ff);
+  color: #fff;
+  padding: 14px 36px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 1rem;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+  text-transform: uppercase;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+}
+
+/* PROS CONTENT */
+.pros-content {
+  margin-top: 100px;
+}
+
+.pros-content h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+.pros-content h2 span {
+  color: #b94cf6;
+}
+
+/* PRO CARDS */
+.pro-cards {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.pro-card {
+  text-align: center;
+  max-width: 180px;
+}
+
+.pro-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid rgba(255, 255, 255, 0.2);
+  margin-bottom: 15px;
+}
+
+.pro-card h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.pro-card p {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+  font-style: italic;
+}
+
+/* TESTIMONIAL SECTION */
+
+.testimonial-section {
+  background: #9f55ff; /* Purple background */
+  padding: 80px 20px;
+  color: #fff;
+  text-align: left;
+}
+
+.testimonial-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.testimonial-image img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 6px solid #fff;
+}
+
+.testimonial-text {
+  max-width: 600px;
+}
+
+.testimonial-text blockquote {
+  font-size: 1.4rem;
+  font-style: italic;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.testimonial-text h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.testimonial-text p {
+  font-size: 1rem;
+  opacity: 0.85;
+}
+
+/* ========== TUTORIALS SECTION ========== */
+.tutorials-section {
+  text-align: center;
+  padding: 60px 0;
+  background-color: #fff;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.tutorials-section h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #333;
+  font-weight: 700;
+}
+
+.tutorials-section h2 span {
+  color: #c97ef3; /* Purple color for "popular" */
+}
+
+.tutorial-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.tutorial-card {
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  width: 250px;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.tutorial-card:hover {
+  transform: translateY(-5px);
+}
+
+.tutorial-thumbnail {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.tutorial-thumbnail img:first-child {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+
+.play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.tutorial-card h3 {
+  font-size: 1.2rem;
+  margin: 10px 0 5px;
+  color: #333;
+}
+
+.tutorial-card p {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.tutorial-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.tutorial-author {
+  display: flex;
+  align-items: center;
+}
+
+.tutorial-author img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.tutorial-author h4 {
+  font-size: 0.85rem;
+  color: #333;
+}
+
+.duration {
+  font-size: 0.85rem;
+  color: #888;
+}
+
+.tutorial-rating {
+  margin-top: 8px;
+}
+
+.tutorial-rating i {
+  color: #c97ef3; /* Purple stars */
+  font-size: 14px;
+  margin-right: 2px;
+}
+
+/* Free Membership Section */
+.free-membership {
+  background-color: #0a0a1a; /* Dark navy background */
+  text-align: center;
+  padding: 80px 20px;
+  color: #fff;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.free-membership h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+.free-membership h2 span {
+  color: #c97ef3; /* Purple for "Free" */
+}
+
+.membership-list {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.membership-card {
+  max-width: 200px;
+}
+
+.membership-card img {
+  width: 40px;
+  margin-bottom: 15px;
+}
+
+.membership-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.membership-card p {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.membership-btn {
+  padding: 12px 30px;
+  background: linear-gradient(to right, #c97ef3, #a74be4);
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.membership-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(201, 126, 243, 0.4);
+}
+
+/* FAQ Section */
+/* FAQ Section */
+.faq {
+  background-color: #fff;
+  padding: 80px 20px;
+  text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.faq h2 {
+  font-size: 2rem;
+  margin-bottom: 50px;
+  color: #333;
+  font-weight: 700;
+}
+
+.faq-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  max-width: 1100px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+.faq-column {
+  flex: 1;
+  min-width: 300px;
+}
+
+.faq-item {
+  margin-bottom: 30px;
+}
+
+.faq-item h3 {
+  font-size: 1.2rem;
+  color: #07135c; /* Deep blue for question headings */
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.faq-item p {
+  font-size: 0.95rem;
+  color:#c97ef3;
+  line-height: 1.6;
+}
+
+/* Footer Section */
+/* Footer Section */
+.footer {
+  background-color: #0a0a1a; /* Deep navy background */
+  padding: 40px 20px;
+  text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.footer-content {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.footer-logo {
+  width: 120px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons i {
+  font-size: 14px;
+  color:  #0a0a1a;
+  width: 25px;
+  height: 25px;
+  background:  #fff; /* Light circle background */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.social-icons i:hover {
+  background: #c97ef3; /* Purple background on hover */
+  color: #fff;
+}
+
+.footer-text {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.4); /* Faded copyright */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .footer-top {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}
