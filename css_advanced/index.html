@@ -1,307 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="https://kit.fontawesome.com/4a2b055604.js"
-            crossorigin="anonymous"></script>
-        <title>Smiles School</title>
-        <link rel="stylesheet" href="styles.css">
-        <!-- Fonts -->
-        <link
-            href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap"
-            rel="stylesheet">
-    </head>
-    <body>
-        <!-- ===== HEADER ===== -->
-        <header class="header-1">
-            <nav class="container">
-                <img src="images/logo.png" alt="logo">
-                <ul>
-                    <li><a href="#">COURSE</a></li>
-                    <li><a href="#">PRICING</a></li>
-                    <li><a href="#">LOGIN</a></li>
-                </ul>
-            </nav>
-        </header>
+<head>
+  <meta charset="UTF-8">
+  <title>Feedback Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    .error {
+      color: red;
+      font-size: 0.9em;
+    }
+    input, textarea {
+      display: block;
+      margin-bottom: 10px;
+      width: 300px;
+    }
+  </style>
+</head>
+<body>
 
-        <main>
-            <!-- ===== HERO + PROS ===== -->
-            <section class="hero-block">
-                <div class="container hero-content">
-                    <h1>Get schooled</h1>
-                    <div class="hero-tags">
-                        <span>SMILES</span>
-                        <span>GRIN</span>
-                        <span>LAUGH</span>
-                    </div>
-                    <button class="btn-primary">REGISTER FOR FREE</button>
-                </div>
+  <h2>Feedback Form</h2>
 
-                <div class="container pros-content">
-                    <h2><span>Learn</span> from the pros</h2>
-                    <div class="pro-cards">
-                        <div class="pro-card">
-                            <img src="images/1.png" alt="Phillip Massey">
-                            <h3>Phillip Massey</h3>
-                            <p>« Smile of the year » 2018 - 2019</p>
-                        </div>
-                        <div class="pro-card">
-                            <img src="images/3.png" alt="Nannie Lawrence">
-                            <h3>Nannie Lawrence</h3>
-                            <p>Best « little smile » 2017</p>
-                        </div>
-                        <div class="pro-card">
-                            <img src="images/2.png" alt="Bruce Walters">
-                            <h3>Bruce Walters</h3>
-                            <p>Best « Friend Smile » live performance 2019</p>
-                        </div>
-                        <div class="pro-card">
-                            <img src="images/4.png" alt="Henry Hughes">
-                            <h3>Henry Hughes</h3>
-                            <p>« 24h smiles » winner 2016 - 2019</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
+  <form id="feedbackForm">
+    <label>Email:
+      <input type="email" id="email" required>
+      <div id="emailError" class="error"></div>
+    </label>
 
-            <!-- ===== TESTIMONIAL ===== -->
-            <section class="testimonial-section">
-                <div class="testimonial-container">
-                    <div class="testimonial-image">
-                        <img src="images/5.png" alt="testimonial">
-                    </div>
-                    <div class="testimonial-text">
-                        <blockquote>
-                            « Those tutorials are concise and go straight to the
-                            point. I can’t think of a better place to learn
-                            smiling. And it’s so fun! »
-                        </blockquote>
-                        <h3>NAME</h3>
-                        <p>weather presenter</p>
-                    </div>
-                </div>
-            </section>
+    <label>Age:
+      <input type="number" id="age" required>
+      <div id="ageError" class="error"></div>
+    </label>
 
-            <!-- ===== MOST POPULAR TUTORIALS ===== -->
-            <section class="tutorials-section">
-                <h2>Most <span>popular</span> tutorials</h2>
-                <div class="tutorial-list">
+    <label>Message:
+      <textarea id="message" rows="6" required></textarea>
+      <div id="wordCount"></div>
+      <div id="charCount"></div>
+      <div id="messageError" class="error"></div>
+    </label>
 
-                    <!-- Card 1 -->
-                    <div class="tutorial-card">
-                        <div class="tutorial-thumbnail">
-                            <img src="images/9.png" alt="Diagonal Smile">
-                            <img src="images/play.png" alt="Play"
-                                class="play-icon">
-                        </div>
-                        <h3>Diagonal Smile</h3>
-                        <p>Lorem ipsum dolor sit amet, consect adipiscing elit,
-                            sed do eiusmod.</p>
-                        <div class="tutorial-footer">
-                            <div class="tutorial-author">
-                                <img src="images/1.png" alt="Phillip Massey">
-                                <h4>Phillip Massey</h4>
-                            </div>
-                            <p class="duration">8 min</p>
-                        </div>
-                        <div class="tutorial-rating">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-                    </div>
+    <button type="submit">Submit</button>
+  </form>
 
-                    <!-- Card 2 -->
-                    <div class="tutorial-card">
-                        <div class="tutorial-thumbnail">
-                            <img src="images/6.png" alt="Happy Smile">
-                            <img src="images/play.png" alt="Play"
-                                class="play-icon">
-                        </div>
-                        <h3>Happy Smile</h3>
-                        <p>Lorem ipsum dolor sit amet, consect adipiscing elit,
-                            sed do eiusmod.</p>
-                        <div class="tutorial-footer">
-                            <div class="tutorial-author">
-                                <img src="images/1.png" alt="Phillip Massey">
-                                <h4>Phillip Massey</h4>
-                            </div>
-                            <p class="duration">8 min</p>
-                        </div>
-                        <div class="tutorial-rating">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-                    </div>
+  <script>
+    const form = document.getElementById('feedbackForm');
+    const emailInput = document.getElementById('email');
+    const ageInput = document.getElementById('age');
+    const messageInput = document.getElementById('message');
 
-                    <!-- Card 3 -->
-                    <div class="tutorial-card">
-                        <div class="tutorial-thumbnail">
-                            <img src="images/8.png" alt="Natural Smile">
-                            <img src="images/play.png" alt="Play"
-                                class="play-icon">
-                        </div>
-                        <h3>Natural Smile</h3>
-                        <p>Lorem ipsum dolor sit amet, consect adipiscing elit,
-                            sed do eiusmod.</p>
-                        <div class="tutorial-footer">
-                            <div class="tutorial-author">
-                                <img src="images/1.png" alt="Phillip Massey">
-                                <h4>Phillip Massey</h4>
-                            </div>
-                            <p class="duration">8 min</p>
-                        </div>
-                        <div class="tutorial-rating">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-                    </div>
+    const emailError = document.getElementById('emailError');
+    const ageError = document.getElementById('ageError');
+    const messageError = document.getElementById('messageError');
+    const wordCount = document.getElementById('wordCount');
+    const charCount = document.getElementById('charCount');
 
-                    <!-- Card 4 -->
-                    <div class="tutorial-card">
-                        <div class="tutorial-thumbnail">
-                            <img src="images/7.png" alt="Sad Smile">
-                            <img src="images/play.png" alt="Play"
-                                class="play-icon">
-                        </div>
-                        <h3>Sad Smile</h3>
-                        <p>Lorem ipsum dolor sit amet, consect adipiscing elit,
-                            sed do eiusmod.</p>
-                        <div class="tutorial-footer">
-                            <div class="tutorial-author">
-                                <img src="images/1.png" alt="Phillip Massey">
-                                <h4>Phillip Massey</h4>
-                            </div>
-                            <p class="duration">8 min</p>
-                        </div>
-                        <div class="tutorial-rating">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-                    </div>
+    form.addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent default form submission
 
-                </div>
-            </section>
+      // Clear previous errors
+      emailError.textContent = '';
+      ageError.textContent = '';
+      messageError.textContent = '';
 
-            <!-- ===== FREE MEMBERSHIP (Next Section Placeholder) ===== -->
-            <section class="free-membership">
-                <h2><span>Free</span> membership</h2>
-                <div class="membership-list">
-                    <div class="membership-card">
-                        <img src="images/smile.png" alt="Smile Icon">
-                        <h3>Lorem Ipsum</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit.</p>
-                    </div>
-                    <div class="membership-card">
-                        <img src="images/smile.png" alt="Smile Icon">
-                        <h3>Lorem Ipsum</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit.</p>
-                    </div>
-                    <div class="membership-card">
-                        <img src="images/smile.png" alt="Smile Icon">
-                        <h3>Lorem Ipsum</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit.</p>
-                    </div>
-                    <div class="membership-card">
-                        <img src="images/smile.png" alt="Smile Icon">
-                        <h3>Lorem Ipsum</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit.</p>
-                    </div>
-                </div>
-                <button class="membership-btn">REGISTER FOR FREE</button>
-            </section>
+      let valid = true;
 
-            <!-- ===== FAQ SECTION ===== -->
-            <section class="faq">
-                <h2>F.A.Q</h2>
-                <div class="faq-container">
-                    <div class="faq-column">
-                        <div class="faq-item">
-                            <h3>How does this work?</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit, sed do
-                                eiusmod tempor incididunt ut labore et dolore
-                                magna aliqua. Ut enim ad
-                                minim veniam, quis nostrud exercitation ullamco
-                                laboris nisi ut
-                                aliquip ex ea commodo consequat.
-                            </p>
-                        </div>
-                        <div class="faq-item">
-                            <h3>How does this work?</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit, sed do
-                                eiusmod tempor incididunt ut labore et dolore
-                                magna aliqua. Ut enim ad
-                                minim veniam, quis nostrud exercitation ullamco
-                                laboris nisi ut
-                                aliquip ex ea commodo consequat.
-                            </p>
-                        </div>
-                    </div>
+      // Validate Email
+      const email = emailInput.value.trim();
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailPattern.test(email)) {
+        emailError.textContent = 'Please enter a valid email address.';
+        valid = false;
+      }
 
-                    <div class="faq-column">
-                        <div class="faq-item">
-                            <h3>How does this work?</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit, sed do
-                                eiusmod tempor incididunt ut labore et dolore
-                                magna aliqua. Ut enim ad
-                                minim veniam, quis nostrud exercitation ullamco
-                                laboris nisi ut
-                                aliquip ex ea commodo consequat.
-                            </p>
-                        </div>
-                        <div class="faq-item">
-                            <h3>How does this work?</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit, sed do
-                                eiusmod tempor incididunt ut labore et dolore
-                                magna aliqua. Ut enim ad
-                                minim veniam, quis nostrud exercitation ullamco
-                                laboris nisi ut
-                                aliquip ex ea commodo consequat.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
+      // Validate Age
+      const age = parseInt(ageInput.value.trim(), 10);
+      if (isNaN(age) || age < 18 || age > 99) {
+        ageError.textContent = 'Age must be a number between 18 and 99.';
+        valid = false;
+      }
 
-            <!-- ===== FOOTER ===== -->
-            <footer class="footer">
-                <div class="footer-content">
-                    <div class="footer-top">
-                        <img src="images/logo.png" alt="Smileschool Logo"
-                            class="footer-logo">
-                        <div class="social-icons">
-                            <i class="fa-brands fa-facebook-f"></i>
-                            <i class="fa-brands fa-twitter"></i>
-                            <i class="fa-brands fa-instagram"></i>
-                        </div>
-                    </div>
-                    <p class="footer-text">© Smileschool 2020</p>
-                </div>
-            </footer>
+      // Validate Message
+      const message = messageInput.value.trim();
+      const words = message.split(/\s+/).filter(word => word.length > 0);
+      const characters = message.length;
 
-        </body>
-    </html>
+      wordCount.textContent = `Words: ${words.length}/100`;
+      charCount.textContent = `Characters: ${characters}/5000`;
+
+      if (words.length > 100) {
+        messageError.textContent = 'Message must not exceed 100 words.';
+        valid = false;
+      }
+
+      if (characters > 5000) {
+        messageError.textContent += ' Message must not exceed 5000 characters.';
+        valid = false;
+      }
+
+      if (valid) {
+        alert('Form submitted successfully!');
+        form.reset();
+        wordCount.textContent = '';
+        charCount.textContent = '';
+      }
+    });
+
+    // Optional: Live count updates
+    messageInput.addEventListener('input', () => {
+      const words = messageInput.value.trim().split(/\s+/).filter(word => word.length > 0);
+      const characters = messageInput.value.length;
+      wordCount.textContent = `Words: ${words.length}/100`;
+      charCount.textContent = `Characters: ${characters}/5000`;
+    });
+  </script>
+
+</body>
+</html>

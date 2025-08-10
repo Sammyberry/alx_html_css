@@ -1,0 +1,146 @@
+/* Footer Section */
+.footer {
+    background-color: #071629;
+    color: #fff;
+    padding: 40px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Top Section: Logo Left, Social Right */
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.footer-logo img {
+    height: 40px;
+}
+
+.footer-social a {
+    margin-left: 15px;
+    display: inline-block;
+}
+
+.footer-social img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    /* Makes icons circular */
+    background-color: #fff;
+    padding: 5px;
+    transition: transform 0.3s ease;
+}
+
+.footer-social img:hover {
+    transform: scale(1.1);
+}
+
+/* Bottom Section: Copyright */
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+    /* Faded look */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footer-top {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-social {
+        margin-top: 15px;
+    }
+}
+
+/* =====================
+   RESPONSIVENESS
+===================== */
+@media (max-width: 1024px) {
+
+    /* Tablet */
+    .what-we-do-container,
+    .results-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .icon-card {
+        width: 45%;
+    }
+
+    .stat-item {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* Large mobile / small tablet */
+    .icon-card {
+        width: 100%;
+    }
+
+    .stat-item {
+        width: 100%;
+    }
+
+    .pentagon {
+        width: 100px;
+        border-width: 0 50px 34px 50px;
+    }
+
+    .pentagon:after {
+        top: 34px;
+        left: -50px;
+        border-width: 68px 100px 0 100px;
+    }
+
+    .stat-number {
+        font-size: 1.5rem;
+    }
+
+    .stat-label {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 480px) {
+
+    /* Small mobile */
+    .what-we-do-container,
+    .results-container {
+        gap: 15px;
+    }
+
+    .pentagon {
+        width: 80px;
+        border-width: 0 40px 27px 40px;
+    }
+
+    .pentagon:after {
+        top: 27px;
+        left: -40px;
+        border-width: 54px 80px 0 80px;
+    }
+
+    .stat-number {
+        font-size: 1.2rem;
+    }
+
+    .stat-label {
+        font-size: 0.75rem;
+    }
+}

@@ -1,0 +1,127 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variables */
+:root {
+    --color-primary: #ff6565;
+    --color-light: #ffffff;
+    --max-width: 1000px;
+    --font-main: 'Source Sans Pro', sans-serif;
+}
+
+/* Base */
+body {
+    font-family: var(--font-main);
+    color: var(--color-light);
+}
+
+/* Container */
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* HEADER */
+.site-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.5rem 0;
+    z-index: 10;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo img {
+    width: 140px;
+    height: auto;
+}
+
+.main-nav ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.main-nav a {
+    color: var(--color-light);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.main-nav a:hover,
+.main-nav a:active {
+    color: var(--color-primary);
+}
+
+/* HERO SECTION */
+.hero {
+    position: relative;
+    height: 100vh;
+    background: url('images/headphones_hero_1.jpg') no-repeat center center / cover;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+}
+
+.hero-content {
+    position: relative;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-top: 15rem;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero h2 {
+    font-weight: normal;
+    margin-bottom: 3rem;
+}
+
+.btn {
+    background: var(--color-primary);
+    color: var(--color-light);
+    padding: 15px 30px;
+    border-radius: 2rem;
+    /* rounded button */
+    display: inline-block;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.btn:hover,
+.btn:active {
+    opacity: 0.9;
+}
+
+.hero p {
+    max-width: 500px;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+.hero-content p {
+    margin-top: 3rem;
+}

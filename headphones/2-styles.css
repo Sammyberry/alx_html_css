@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* OUR RESULTS SECTION */
+.our-results {
+    background: url("images/headphones_hero_2.jpg") no-repeat center center/cover;
+    width: 100%;
+    min-height: 100vh;
+    /* Fill entire viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px;
+}
+
+/* Content container */
+.results-content {
+    max-width: 1200px;
+    width: 100%;
+    color: white;
+}
+
+.results-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+.results-intro {
+    font-size: 1rem;
+    line-height: 1.5;
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+}
+
+/* Stats section */
+.results-stats {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+/* Stat item with pentagon background */
+.stat-item {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background: url("images/pentagone.png") no-repeat center center/contain;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+/* Remove the <img> tag effect since pentagon is background now */
+.stat-item img {
+    display: none;
+}
+
+/* Stat number */
+.stat-number {
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+/* Stat label */
+.stat-label {
+    font-size:1rem;
+    margin-top: 5px;
+}

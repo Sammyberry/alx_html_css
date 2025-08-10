@@ -1,0 +1,127 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Contact Section */
+.contact-section {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 80px 20px;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.contact-section h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #222;
+}
+
+/* Form Styling */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 15px 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 15px;
+    font-family: inherit;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #ff5e63;
+}
+
+/* Button Styling */
+.cta-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 36px;
+    background-color: #ff5e63;
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background 0.3s ease;
+    margin-top: 10px;
+}
+
+.cta-button:hover {
+    background-color: #e64a4f;
+}
+
+/* Tablets */
+@media (max-width: 1024px) {
+    .results-content h2 {
+        font-size: 2rem;
+    }
+
+    .results-stats {
+        gap: 30px;
+    }
+
+    .pentagon {
+        width: 100px;
+        height: 100px;
+    }
+
+    .stat-number {
+        font-size: 1.3rem;
+    }
+}
+
+/* Mobile Phones */
+@media (max-width: 768px) {
+    .results-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .results-intro {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+
+    .results-stats {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .pentagon {
+        width: 90px;
+        height: 90px;
+    }
+
+    .stat-number {
+        font-size: 1.2rem;
+    }
+
+    .stat-label {
+        font-size: 0.85rem;
+    }
+}
